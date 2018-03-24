@@ -2,6 +2,7 @@ pipeline:
 
   frontend:
     image: node:6
+    image: monostream/nodejs-gulp-bower
     commands:
-      - npm install
-      - npm test
+      - npm run build
+      - npm run tests -- --unit
