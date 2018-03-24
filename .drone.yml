@@ -3,5 +3,5 @@ pipeline:
   frontend:
     image: node:6
     commands:
-      - npm install bower
+      - npm install gulp
       - npm run build
